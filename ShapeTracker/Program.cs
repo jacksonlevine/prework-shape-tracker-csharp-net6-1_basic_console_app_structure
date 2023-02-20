@@ -7,8 +7,8 @@ namespace ShapeTracker
   {
     static void Main()
     {
-      Triangle testTriangle = new Triangle();
-      Console.WriteLine(testTriangle);
+      // Triangle testTriangle = new Triangle(2);
+      // Console.WriteLine(testTriangle);
     }
   }
 }
