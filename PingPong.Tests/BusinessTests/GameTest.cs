@@ -14,13 +14,15 @@ namespace PingPong.Tests
     }
 
     [TestMethod]
-    public void GetResponse_ReturnsNumber1AsString_string() {
+    public void GetResponse_ReturnsNumber1AsString_string()
+    {
       Game newGame = new Game();
       Assert.AreEqual(newGame.GetResponse(1), "1");
     }
 
     [TestMethod]
-    public void GetResponse_ReturnsPingIfNumberIsDivisibleBy3_string() {
+    public void GetResponse_ReturnsPingIfNumberIsDivisibleBy3_string()
+    {
       Game newGame = new Game();
       Assert.AreEqual("ping", newGame.GetResponse(3));
       Assert.AreEqual("ping", newGame.GetResponse(9));
@@ -28,9 +30,17 @@ namespace PingPong.Tests
     }
 
     [TestMethod]
-    public void GetResponse_ReturnsPongIfNumberIsDivisibleBy5_string() {
+    public void GetResponse_ReturnsPongIfNumberIsDivisibleBy5_string()
+    {
       Game newGame = new Game();
       Assert.AreEqual("pong", newGame.GetResponse(5));
+    }
+
+    [TestMethod]
+    public void GetResponse_ReturnsPingPongIfNumberIsDivisibleBy3And5_string()
+    {
+      Game newGame = new Game();
+      Assert.AreEqual("ping-pong", newGame.GetResponse(30));
     }
   }
 }

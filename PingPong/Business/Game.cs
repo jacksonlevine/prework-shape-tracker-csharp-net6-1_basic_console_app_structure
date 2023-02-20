@@ -9,11 +9,14 @@ namespace PingPong.Business
 
     public string GetResponse(int input) 
     {
-      if(input%3==0)
+      if(input%3 == 0 && input%5 == 0) {
+        return "ping-pong";
+      }
+      if(input%3 == 0)
       {
         return "ping";
       }
-      if(input%5==0) {
+      if(input%5 == 0) {
         return "pong";
       }
 
