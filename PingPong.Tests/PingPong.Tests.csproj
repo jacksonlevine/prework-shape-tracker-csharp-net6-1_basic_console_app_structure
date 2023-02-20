@@ -10,6 +10,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ShapeTracker\ShapeTracker.csproj" />  
+    <ProjectReference Include="..\PingPong\PingPong.csproj" />
   </ItemGroup>
 </Project>
